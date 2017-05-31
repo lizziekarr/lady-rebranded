@@ -35,6 +35,16 @@ $(window).scroll(function(){
     $('.quote').addClass('enter');
   }
 
+  //inspo fades in, journal fades in
+  if(wScroll > $('.shop').offset().top - ($(window).height() / 2.5)){
+    $('.inspo').addClass('show');
+  }
+
+  if(wScroll > $('.shop').offset().top - ($(window).height() / 1.2)){
+    $('.journal-pic').addClass('show');
+    $('.journal-copy').addClass('show');
+  }
+
 
 });
 
