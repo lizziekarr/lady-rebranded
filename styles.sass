@@ -1,0 +1,369 @@
+
+//variables
+$lr-blue: #2f2bad
+$lr-purple: #ad2bad
+$lr-gray: #afb0b2
+$lr-pink: #f71568
+$lr-red: #e42692
+$lr-yellow: #ffd100
+$title-size: 4vw
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Futura Medium'
+
+.container-fluid
+  padding: 0
+  margin: 0
+
+header
+  position: relative
+  height: 100vh
+  width: 100%
+  background-image: url('	https://s3-us-west-2.amazonaws.com/lady-rebranded/LR-lioness.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-position: center center
+  overflow: scroll
+  .nav-bar
+    position: fixed
+    height: 60px
+    background-color: rgba(0, 0, 0, .5)
+    z-index: 200
+    img
+      height: 60px
+      width: auto
+      float: left
+    nav
+      float: right
+      display: inline-block
+      ul
+        li
+          display: inline-block
+          list-style-type: none
+          font-size: 16px
+          font-family: 'Josefin Sans SemiBold'
+          color: $lr-gray
+          float: left
+          padding: 5px
+          &:hover
+            color: $lr-red
+            cursor: pointer
+    h1
+      text-align: left
+      font-size: 2.5vw
+      position: relative
+      margin-top: 40%
+      color: $lr-pink
+      font-family: 'Futura Bold'
+      &.tagline
+        text-align: left
+        //margin-right: 20%
+        font-size: 1.5vw
+        color: $lr-gray
+        font-style: italic
+        //margin-bottom: 5%
+      &.branded
+        font-size: 2vw
+        &:hover
+          color: $lr-yellow
+          cursor: pointer
+          letter-spacing: 3px
+          transition: letter-spacing 1s ease-in-out
+      sup
+        font-size: 12px
+      &.commercial
+        display: none
+        padding: 10px
+        color: $lr-gray
+        width: 12vw
+        border-radius: 5px
+        font-size: 3vw
+        border: solid $lr-gray 3px
+        opacity: .6
+        &:hover
+          opacity: 1
+          color: #fff
+          border-color: #fff
+          background-color: $lr-pink
+          cursor: pointer
+          transition: all .5s ease-in-out
+
+body
+  position: relative
+  text-align: center
+  .line
+    margin-top: 5vw
+    height: 1px
+    background-color: rgba(47, 43, 173, 1)
+  .gray
+    background-color: $lr-gray
+    height: 5vh
+  .photo-breather
+    height: 60vh
+    background-image: url('https://s3-us-west-2.amazonaws.com/lady-rebranded/breather-163396.jpg')
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+  .mission
+    //background-color: rgba(175, 176, 178, 1)
+    height: 50vh
+    h3
+      position: absolute
+      color: $lr-gray
+      line-height: 2
+      font-size: 2vw
+      width: 80%
+      margin-left: 10%
+      margin-top: 8%
+
+  .our-approach
+    max-height: 800px
+    color: $lr-blue
+    padding-top: 20px
+    .box
+      border: solid $lr-blue 1px
+      border-radius: 5px
+      margin: 12%
+      h1
+        font-family: 'Futura Heavy'
+        font-size: 4vw
+
+      .learn
+        padding: 20px
+        border-radius: 5px
+        margin-top: 70px
+        margin-bottom: 70px
+        font-size: 1.5vw
+        border: solid $lr-red 3px
+        font-family: 'Futura Bold'
+        color: $lr-red
+        &:hover
+          color: #fff
+          border-color: #fff
+          background-color: $lr-blue
+          cursor: pointer
+          letter-spacing: 3px
+          transition: all 1s ease-in-out
+      .icon-block
+        margin-bottom: 60px
+        transform: translateX(-20px)
+        opacity: 0
+        &.is-showing
+          opacity: 1
+          transform: translateX(0px)
+          transition: all .8s ease-in
+        .icon
+          margin-right: 5%
+          width: 8vw
+          height: 8vw
+          border: solid $lr-blue 2px
+          border-radius: 50%
+          padding: 1.8vw
+          color: $lr-blue
+        h2
+          font-size: 2.5vw
+          color: $lr-pink
+          font-family: 'Futura Bold'
+        h4
+          font-size: 1.5vw
+          padding: 10px
+          font-family: 'Futura Medium'
+          color: $lr-blue
+  .photo-one
+    height: 300px
+    background-image: url('https://s3-us-west-2.amazonaws.com/lady-rebranded/women-backs.jpg')
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+    .blue
+      background-color: rgba(47, 43, 173, .3)
+      width: 100%
+      height: 300px
+  .jumpstart
+    max-height: 1500px
+
+    .box
+      //background-color: rgba(228, 38, 146, .9)
+      border-radius: 5px
+      border: solid $lr-blue 1px
+      margin: 12% auto
+      max-height: 1300px
+      .line
+        background-color: $lr-blue
+        margin-left: 10px
+        margin-right: 10px
+      h1
+        font-size: 4vw
+        font-family: 'Futura Heavy'
+        color: $lr-blue
+        display: inline-block
+        &.her
+          font-style: italic
+          color: $lr-blue
+
+      h2
+        margin-top: 25px
+        font-size: 2.5vw
+        padding: 30px
+        line-height: 2
+        color: $lr-red
+        font-family: 'Futura Book'
+
+      h3
+        font-size: 1.5vw
+        color: $lr-pink
+        font-family: 'Futura Bold'
+        margin-left: 5%
+
+      h4
+        font-size: 1.5vw
+        padding: 30px
+        font-family: 'Futura Medium'
+        color: $lr-blue
+
+      .icon-block
+        margin-bottom: 60px
+        transform: translateX(-20px)
+        opacity: 0
+        width: 25vw
+        height: auto
+        &.is-showing
+          opacity: 1
+          transform: translateX(0px)
+          transition: all .8s ease-in
+        .icon
+          margin-left: 10%
+          margin-right: 5%
+          width: 90px
+          height: 90px
+          border: solid $lr-blue 2px
+          border-radius: 50%
+          padding: 1.8vw
+          color: $lr-blue
+
+      .access
+        border-top: solid $lr-blue 1px
+        font-size: 2vw
+        padding: 10px
+        color: $lr-blue
+        background-color: #fff
+        border-radius: 0 0 5px 5px
+        font-family: 'Futura Medium'
+        &:hover
+          //border-color: $lr-purple
+          cursor: pointer
+          letter-spacing: 3px
+          transition: all 1s ease-in
+        transform: translateY(-20px)
+        opacity: 0
+        &.slide-up
+          opacity: 1
+          font-size: 4vw
+          transform: translateY(0px)
+          transition: all 1.6s ease-in-out
+
+  .photo-two
+    height: 400px
+    background-image: url('https://s3-us-west-2.amazonaws.com/lady-rebranded/noah-hinton-176475.jpg')
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+
+  .daily-quote
+    height: 300px
+    text-align: center
+    border-bottom: 1px solid $lr-blue
+    .fa
+      margin-top: 5%
+      color: #fff
+    .quote
+      color: $lr-blue
+      font-size: 3vw
+      margin: 100px
+      font-family: 'Futura Book'
+      opacity: 0
+      &.enter
+        opacity: 1
+        transition: all 1.5s ease-in
+
+  .promo
+    //background-color: rgba(173, 43, 173, .8)
+    border-radius: 5px
+    padding: 12%
+    height: auto
+    line-height: 2
+    color: $lr-purple
+    font-size: 2.5vw
+    font-family: 'Futura Book'
+
+  .inspiration
+    max-height: 1000px
+    .shop
+      h3
+        color: $lr-blue
+        font-family: 'Futura Book'
+        border: solid $lr-blue 1px
+        margin-left: 20px
+        margin-right: 20px
+      .journal-pic
+        width: 20vw
+        height: auto
+
+    .headshot
+      img
+        width: 30vw
+        height: auto
+      .social-lockup
+        margin-top: 40px
+        .social
+          border-radius: 50%
+          display: inline-block
+          position: relative
+          margin: 30px
+          padding: 20px
+          width: 6vw
+          height: 6vw
+          border: solid $lr-blue 1px
+          &:hover
+            cursor: pointer
+            color: $lr-red
+            border-color: $lr-red
+          a
+            color: $lr-blue
+            width: 40%
+            height: auto
+            &:hover
+              color: $lr-red
+    .blog
+        .blog-photo
+          img
+            width: 25vw
+            height: auto
+
+
+  footer
+    position: relative
+    background-image: url('https://s3-us-west-2.amazonaws.com/lady-rebranded/footer.jpg')
+    width: 100%
+    background-size: cover
+    background-position: bottom center
+    background-repeat: no-repeat
+    p
+      color: $lr-purple
+      &.subscribe
+        border: solid $lr-purple 2px
+        width: 100px
+        margin-left: 45%
+        &:hover
+          letter-spacing: 1px
+          border-color: $lr-yellow
+          color: $lr-yellow
+          cursor: pointer
+    .buffer
+      opacity: 0
+      margin-top: 10%
+      height: 15%
