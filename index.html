@@ -3,245 +3,443 @@
 <head>
   <meta name="author" content="Lady Rebranded">
   <meta name="description" content="be|brand|do">
+  <link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/LR-favicon.ico">
+  <script src="./jquery.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-  <!--script(rel='stylesheet' src="./bower_components/bootstrap/dist/js/bootstrap.min.js")-->
+  <script src="./modernizr-2.8.3.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
   <link href="./styles.min.css" rel="stylesheet">
   <script type="text/javascript" src="app.js"></script>
-  <title>Lady Rebranded</title>
+  <script type="text/javascript" src="//static.mailerlite.com/js/w/webforms.min.js?v3772b61f1ec61c541c401d4eadfdd02f"></script>
+  <!--subscribe button pop up-->
+  <script type="text/javascript" src="//static.mailerlite.com/js/w/button.min.js?v1f0baea18b848a8ab8e485e9a1acc285"></script>
+  <title>LADY Rebranded</title>
 </head>
 <div class="container-fluid">
   <header>
-    <nav><img src="https://s3-us-west-2.amazonaws.com/lady-rebranded/LRB_B_red_magenta-01.png" class="logo"><img src="https://s3-us-west-2.amazonaws.com/lady-rebranded/LRB_C_red_magenta.jpg" class="logo">
+    <nav><a href="#home"><img src="https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/LRB_B_red_magenta-01.png" class="logo"></a><a href="#home"><img src="https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/textlogo.png" class="logo"></a>
       <ul>
-        <li>Events  |</li>
-        <li>Inspiration  |</li>
-        <li>Our Story   </li>
+        <li> <a href="#home" class="home-link">HOME |</a></li>
+        <li> <a href="#consulting" class="consulting-link">CONSULTING |</a></li>
+        <li> <a href="#events" class="event-link">EVENTS |</a></li>
+        <li><a href="#contact" class="contact-link">CONTACT US</a></li>
       </ul>
     </nav>
-    <div class="row">
-      <div class="col-xs-offset-1 col-xs-4">
-        <h1 class="disruptive">Building Businesses with Disruptive Brands.</h1>
-        <h1 class="tagline">Be. Brand. Do.</h1><sup>TM</sup>
-        <h1 class="commercial">Play Video</h1>
-        <h1 class="branded">Get Branded</h1>
-      </div>
-    </div>
   </header>
   <body>
-    <div class="gray"></div>
-    <div class="mission">
-      <h3>We empower women influencers, creators and entrepreneurs to build authentic, breakthrough brands. Understanding the challenges that women entrepreneurs and leaders face, we provide solutions that help women owned businesses and businesses where women lead to develop, grow and succeed.</h3>
-    </div>
-    <div class="gray"></div>
-    <div class="photo-breather"></div>
-    <div class="our-approach">
-      <div class="box">
+    <div id="home" class="home-page">
+      <div class="top-page">   
+        <div class="header-copy showing">  
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-4">
+              <h1 class="disruptive">Building Businesses with Disruptive Brands.</h1>
+              <!--.commercial Play Video-->
+              <h1 class="learn">LEARN MORE</h1>
+            </div>
+          </div>
+        </div>
+        <!--.video-lockup-->
+        <!--  a(href='https://s3-us-west-2.amazonaws.com/www.ladyrebranded.com/index.html')
+        //  .fa.fa-times.exit-video
+        //iframe(src="https://player.vimeo.com/video/145835678" width='640' height='360' webkitallowfullscreen mozallowfullscreen allowfullscreen)
+        
+        -->
+      </div>
+      <div class="mission"> 
+        <h2>We empower women influencers, creators and entrepreneurs to build authentic, breakthrough brands. </h2>
+      </div>
+      <div class="photo-breather"></div>
+      <div class="our-approach">
         <div class="row">
           <div class="col-xs-offset-2 col-xs-2">
             <div class="line"></div>
           </div>
           <div class="col-xs-4">
-            <h1>OUR APPROACH</h1>
+            <div class="title">OUR APPROACH</div>
           </div>
           <div class="col-xs-2">
-            <div class="line">     </div>
+            <div class="line"> </div>
+          </div>
+        </div>
+        <div class="box">    
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="icon-block">
+                <div class="icon fa fa-gears"></div>
+                <div class="icon-title">STRATEGY</div>
+                <div class="icon-copy">From business to brand strategy, we partner with you to develop solutions that increase your impact and profitability.</div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="icon-block">
+                <div class="icon fa fa-map-signs"></div>
+                <div class="icon-title">CREATIVE DIRECTION</div>
+                <div class="icon-copy">Our award winning team seamlessly translates your vision into compelling visual content and copy that connects.  </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="icon-block">
+                <div class="icon fa fa-users"></div>
+                <div class="icon-title">TRAINING</div>
+                <div class="icon-copy">Engaging mission-driven training solutions, we work with your team to build a strong culture around your brand. </div>
+              </div>
+            </div>
+          </div><a href="#consulting">
+            <div class="learn">LEARN MORE </div></a>
+        </div>
+      </div>
+      <div class="photo-one">
+        <div class="blue"></div>
+      </div>
+      <div class="jumpstart">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-10"></div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-3">
+              <div class="line"></div>
+            </div>
+            <div class="col-xs-4">
+              <h1>JumpstartHER</h1>
+            </div>
+            <div class="col-xs-3">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="box"> 
+          <div class="blurb"> 
+            <h2>What is it?</h2>
+            <h3>JumpstartHER</h3><sup>TM</sup>
+            <h3>is where women with big ideas come to get resources to help them to increase their capacity, confidence and access to capital.  </h3>
+            <h2>It is a growing global network of women who are disrupting spaces, identifying failures in the marketplace and creating socially impactful solutions in local and global economies. </h2>
+          </div>
+          <div class="row">
+            <div class="icon-row">
+              <div class="col-xs-4">
+                <div class="icon-block">
+                  <div class="icon fa fa-calendar-check-o"></div>
+                  <div class="icon-title">EVENTS</div>
+                  <div class="icon-copy">From live masterclasses to webinars, join us for empowering experiences to help you build your business.</div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="icon-block">
+                  <div class="icon fa fa-laptop"></div>
+                  <div class="icon-title">RESOURCES</div>
+                  <div class="icon-copy">Relevant, curated development resources for our growing online community of influencers, creators and entrepreneurs. </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="icon-block">
+                  <div class="icon fa fa-book"></div>
+                  <div class="icon-title">GUIDED CURRICULUM</div>
+                  <div class="icon-copy">E-Books, Worksheets and Online Courses for entrepreneurs and leaders.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="access">GET ACCESS</div>
+          <div class="row">
+            <div class="col-xs-12 get-access-form">
+              <div id="mlb2-5250485" class="ml-subscribe-form ml-subscribe-form-5250485">
+                <div class="ml-vertical-align-center">
+                  <div style="display:none" class="subscribe-form ml-block-success">
+                    <div class="form-section">
+                      <h4>GET ACCESS!</h4>
+                      <p>Thank you for joining the JumpstartHER community! Be sure to check your inbox to confirm your subscription.</p>
+                    </div>
+                  </div>
+                  <form action="//app.mailerlite.com/webforms/submit/r5h7r9" data-id="439293" data-code="r5h7r9" method="POST" target="_blank" class="ml-block-form">
+                    <div class="subscribe-form">
+                      <div class="form-section mb10">
+                        <h4>GET ACCESS!</h4>
+                        <p>We're building an online platform for women entrepreneurs who want to scale their businesses to market! Get on the list to get access! </p>
+                      </div>
+                      <div class="form-section">
+                        <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                          <input type="email" name="fields[email]" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                        </div>
+                        <div class="form-group ml-field-name ml-validate-required">
+                          <input type="text" name="fields[name]" placeholder="Name*" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                        </div>
+                        <div class="form-group ml-field-last_name ml-validate-required">
+                          <input type="text" name="fields[last_name]" placeholder="Last name*" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                        </div>
+                        <div class="form-group ml-field-company ml-validate-required">
+                          <input type="text" name="fields[company]" placeholder="Company*" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                        </div>
+                        <div class="form-group ml-field-country ml-validate-required">
+                          <input type="text" name="fields[country]" placeholder="Country*" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                        </div>
+                        <div class="form-group ml-field-city ml-validate-required">
+                          <input type="text" name="fields[city]" placeholder="City*" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                        </div>
+                        <input type="hidden" name="ml-submit" value="1">
+                        <button type="submit" class="primary gradient-on">GET ACCESS</button>
+                        <button disabled="disabled" style="display: none;" type="button" class="loading gradient-on"><img src="//static.mailerlite.com/images/rolling.gif" width="20" height="20" style="width: 20px; height: 20px;"></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-two">
+        <div class="buffer"></div>
+        <div class="daily-quote">  
+          <div class="quote">"We can't become what we need to be by remaining what we are."  -- Oprah Winfrey</div>
+        </div>
+      </div>
+      <div class="inspiration">
+        <div class="row">       
+          <div class="col-xs-6">
+            <div class="headshot"><img src="https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/home/Rachel-headshot.jpg"></div>
+            <div class="ceo"> 
+              <h2>Rachel D. Wilson </h2>
+              <h2>CEO & Principal Consultant       </h2>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="blog">
+              <div class="blog-photo"><img src="https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/home/laptop.jpg"></div>
+              <div class="blog-text">
+                <h1>5 Overlooked Strategies for Recruiting New Business</h1><em>Affirmation: I am open to pursuing new methods to making a connection with potential clients.</em>
+                <p>Fear of the unknown often holds us back in various avenues of our lives, and it certainly plays a role in a developing brand. At times, we are so afraid of failure that we limit ourselves by trying nothing new.  But the greatest lessons are learned as we 'fail forward,' try new methods and walk in courage.</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-offset-1 col-xs-3">
-            <div class="icon-block">
-              <div class="icon fa fa-gears fa-3x"></div>
-              <h2>STRATEGY</h2>
-              <h4>From business to brand strategy, we partner with you to develop solutions that increase your impact and profitability.</h4>
-            </div>
+          <div class="col-xs-offset-1 col-xs-4"><a href="#mlb2-5239509">
+              <div class="branded go-to-form">GET BRANDED</div></a></div>
+          <div class="col-xs-offset-2 col-xs-4"><a href="http://www.subscribepage.com/ladyrebranded" target="blank">
+              <div class="branded">GET STRATEGIES</div></a></div>
+        </div>
+      </div>
+      <div class="photo-three"></div>
+      <div id="subscribe" class="shop">
+        <div class="row">
+          <div class="col-xs-3">
+            <div class="line"></div>
           </div>
-          <div class="col-xs-4">
-            <div class="icon-block">
-              <div class="icon fa fa-map-signs fa-3x"></div>
-              <h2>CREATIVE DIRECTION</h2>
-              <h4>Our award winning team seamlessly translates your vision into compelling visual content and copy that connects.  </h4>
-            </div>
+          <div class="col-xs-6">
+            <div class="title">INSPIRATIONAL RESOURCES </div>
           </div>
           <div class="col-xs-3">
-            <div class="icon-block">
-              <div class="icon fa fa-users fa-3x"></div>
-              <h2>TRAINING</h2>
-              <h4>Engaging mission-driven training solutions, we work with your team to build a strong culture around your brand. </h4>
-            </div>
+            <div class="line"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-offset-4 col-xs-4">
-            <h1 class="learn">Learn More </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="photo-one">
-      <div class="blue"></div>
-    </div>
-    <div class="jumpstart">
-      <div class="row">
-        <div class="col-xs-offset-1 col-xs-10">
-          <div class="box">
-            <div class="row">
-              <div class="col-xs-3">
-                <div class="line"></div>
-              </div>
-              <div class="col-xs-6">
-                <h1>JUMPSTART</h1>
-                <h1 class="her">HER</h1>
-              </div>
-              <div class="col-xs-3">
-                <div class="line"></div>
-              </div>
-            </div>
-            <div class="blurb"> 
-              <h2>A globally accessible, comprehensive network that provides women entrepreneurs with resources and a community to grow their businesses. </h2>
-            </div>
-            <div class="row">
-              <div class="icon-row">
-                <div class="col-xs-4">
-                  <div class="icon-block">
-                    <div class="icon fa fa-calendar-check-o fa-3x"></div>
-                    <h3 class="events">EVENTS</h3>
-                    <h4>From live masterclasses to webinars, join us for empowering experiences to help you build your business.</h4>
+          <div class="col-xs-offset-1 col-xs-4">
+            <div class="inspo first">Fresh inspiration every week to keep you inspired, confident and motivated!  </div>
+            <div class="inspo second">Get this weekly inspo delivered straight to your inbox.    </div>
+            <div class="subscribe">SUBSCRIBE</div>
+            <div id="mlb2-5249483" class="ml-subscribe-form ml-subscribe-form-5249483">
+              <div class="ml-vertical-align-center">
+                <div style="display:none" class="subscribe-form ml-block-success">
+                  <div class="form-section">
+                    <h4>GET ON THE LIST</h4>
+                    <p>Thank you for subscribing! Be sure to check your inbox to confirm your subscription.</p>
                   </div>
                 </div>
-                <div class="col-xs-4">
-                  <div class="icon-block">
-                    <div class="icon fa fa-laptop fa-3x"></div>
-                    <h3 class="resources">RESOURCES</h3>
-                    <h4>Relevant curated development resources for our growing online community of influencers, creators and entrepreneurs. </h4>
+                <form action="//app.mailerlite.com/webforms/submit/d0q8e0" data-id="439105" data-code="d0q8e0" method="POST" target="_blank" class="ml-block-form">
+                  <div class="subscribe-form">
+                    <div class="form-section mb10">
+                      <h4>GET ON THE LIST</h4>
+                      <p>Exclusive access to tips, resources & events delivered straight to your inbox! </p>
+                    </div>
+                    <div class="form-section">
+                      <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                        <input type="email" name="fields[email]" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                      </div>
+                    </div>
+                    <input type="hidden" name="ml-submit" value="1">
+                    <button type="submit" class="primary gradient-on">SUBSCRIBE</button>
+                    <button disabled="disabled" style="display: none;" type="button" class="loading gradient-on"><img src="//static.mailerlite.com/images/rolling.gif" width="20" height="20" style="width: 20px; height: 20px;"></button>
                   </div>
-                </div>
-                <div class="col-xs-4">
-                  <div class="icon-block">
-                    <div class="icon fa fa-book fa-3x"></div>
-                    <h3 class="curriculum">GUIDED CURRICULUM</h3>
-                    <h4>E-Books, Worksheets and Online Courses for entrepreneurs and leaders.</h4>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-offset-2 col-xs-4">
+            <div id="product-component-154000897be"></div>
+          </div>
+        </div>
+        <div class="buffer"></div>
+      </div>
+    </div>
+    <div id="events" class="event-page"> 
+      <div class="events">
+        <!--hey Rachel!-->
+        <!--you're writing code!!-->
+        <!--go get em!!-->
+        <!--this is the spot!!-->
+        <!--right here!!-->
+        <!--have a great event!!-->
+        <!--update event link here-->
+        <iframe src="https://www.eventbrite.com/e/lady-rebranded-mastermind-coaching-event-tickets-35162969388?ref=eweb" frameborder="0" height="1000" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+      </div>
+    </div>
+    <div class="consulting-page">
+      <div id="consulting" class="consulting">
+        <div class="consulting-copy">Our unique approach helps your business to develop, grow and succeed.</div>
+      </div>
+      <div class="building">
+        <div class="title">Building Brands Means...</div>
+        <div class="row">
+          <div class="col-xs-4">
+            <div id="strategy" class="picture-block strategy"><a href="#strategy">
+                <div class="text-block">
+                  <div class="picture-title">STRATEGY</div>
+                </div></a></div>
+          </div>
+          <div class="col-xs-4">
+            <div id="creative" class="picture-block creative"><a href="#creative">
+                <div class="text-block">
+                  <div class="picture-title">CREATIVE DIRECTION</div>
+                </div></a></div>
+          </div>
+          <div class="col-xs-4">
+            <div id="training" class="picture-block training"><a href="#training">
+                <div class="text-block">
+                  <div class="picture-title">TRAINING</div>
+                </div></a></div>
+          </div>
+        </div>
+        <div class="copy-box">
+          <div class="fa fa-times"></div>
+          <div class="picture-heading strategy-copy">STRATEGY</div>
+          <div class="picture-copy strategy-copy">The key to building a strong brand is creating a solid strategy. We work with you to help you identify your niche, understand your user and tell your brand story in a way that is relevant and influential. From business development to brand cultivation, our approach to creating solutions that position your business to succeed are engaging and empowering. </div>
+          <div class="picture-heading creative-copy">CREATIVE DIRECTION</div>
+          <div class="picture-copy creative-copy">We believe that innovation and creativity are essential components to creating unforgettable brand experiences. Our team brings over 10 years of experience in creative consulting. We are passionate about multimedia production and have the expertise to help you effectively communicate your brand story. Through the use of powerful tools such as storytelling, we partner with you to create compelling content that is authentic and connects.</div>
+          <div class="picture-heading training-copy">TRAINING</div>
+          <div class="picture-copy training-copy">From employing effective ways to engage your team or translating your strategic objectives into a business culture that is consistent with your brand; we provide training solutions that are transformational. Taking a mission-driven approach, our training outcomes are geared towards strengthening your brand culture, cultivating leadership, creating community and increasing your profitability. </div>
+        </div>
+      </div>
+      <div class="get-branded"> 
+        <div class="get-branded-copy">Contact us to learn more about our offerings and opportunities to increase your brand's impact.</div><a href="#mlb2-5239509">
+          <div class="get-branded-button">GET BRANDED</div></a>
+      </div>
+      <div class="testimonials-photo"></div>
+      <div class="testimonials">
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-2">
+            <div class="line"></div>
+          </div>
+          <div class="col-xs-4">
+            <div class="title">TESTIMONIALS</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="testimonial-quote quote-one"> LADY Rebranded is for everybody. Whether you know something or you know nothing, LADY Rebranded can help you tell your story.
+          <div class="quote-by">Kristen Wickstrom- Community Manager, WeWork</div>
+        </div>
+        <div class="testimonial-quote quote-two">LADY Rebranded is helping to capture & tell the stories of many women in business. 
+          <div class="quote-by">Vincent Scatliffe- CEO, Continuous Good</div>
+        </div>
+        <div class="testimonial-quote quote-three">It is invaluable to have businesses like LADY Rebranded to not only give you the tools you need to succeed in the business world, but in your personal life as well.
+          <div class="quote-by">Stephanie M. Mosley- TV/Film Writer & Producer</div>
+        </div>
+        <div class="testimonial-quote quote-four">Learning about business planning through LADY Rebranded's method, I now use my gifts as a comedienne & actor to create a business.
+          <div class="quote-by">Eljae Brown- Comedienne & Actor, SAG</div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact-page">
+      <div class="get-branded">
+        <div class="buffer"></div><a href="#mlb2-5239509">
+          <h1 class="branded">GET BRANDED</h1></a>
+        <h2>Contact us today for a free consultation.</h2>
+      </div>
+      <div class="contact-section">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="contact-form">
+              <div id="mlb2-5239509" class="ml-subscribe-form ml-subscribe-form-5239509">
+                <div class="ml-vertical-align-center">
+                  <div style="display:none" class="subscribe-form ml-block-success">
+                    <div class="form-section">
+                      <h4>CONTACT US!</h4>
+                      <p>Thank you for reaching out! Our team will connect with you within 24 hours.</p>
+                    </div>
                   </div>
+                  <form action="//app.mailerlite.com/webforms/submit/y1d6z7" data-id="437933" data-code="y1d6z7" method="POST" target="_blank" class="ml-block-form">
+                    <div class="subscribe-form">
+                      <div class="form-section mb10">
+                        <h4>CONTACT US!</h4>
+                        <p>Let us help you increase your impact and profitability as you build your business! </p>
+                        <div class="form-section">
+                          <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                            <input type="email" name="fields[email]" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                          </div>
+                          <div class="form-group ml-field-name ml-validate-required">
+                            <input type="text" name="fields[name]" placeholder="First Name*" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                          </div>
+                          <div class="form-group ml-field-last_name ml-validate-required">
+                            <input type="text" name="fields[last_name]" placeholder="Last Name*" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                          </div>
+                          <div class="form-group ml-field-company">
+                            <input type="text" name="fields[company]" placeholder="Company" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                          </div>
+                          <div class="form-group ml-field-city">
+                            <input type="text" name="fields[city]" placeholder="City" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                          </div>
+                          <div class="form-group ml-field-phone ml-validate-required">
+                            <input type="text" name="fields[phone]" placeholder="Phone*" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                          </div>
+                          <div class="form-group ml-field-state">
+                            <input type="text" name="fields[state]" placeholder="What service are you inquiring about?" value="" spellcheck="false" autocapitalize="off" autocorrect="off" class="form-control">
+                          </div>
+                        </div>
+                        <input type="hidden" name="ml-submit" value="1">
+                        <button type="submit" class="primary gradient-on">CONTACT ME</button>
+                        <button disabled="disabled" style="display: none;" type="button" class="loading gradient-on"><img src="//static.mailerlite.com/images/rolling.gif" width="20" height="20" style="width: 20px; height: 20px;"></button>
+                        <script>function ml_webform_success_5239509(){var $ = ml_jQuery || jQuery; $('.ml-subscribe-form-5239509 .ml-block-success').show(); $('.ml-subscribe-form-5239509 .ml-block-form').hide();};</script>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
-            <div class="access">GET ACCESS</div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="photo-two"></div>
-    <div class="gray"> </div>
-    <div class="daily-quote"> 
-      <div class="row">
-        <div class="col-xs-offset-1 col-xs-1">
-          <!--.fa.fa-quote-left.fa-4x-->
-        </div>
-        <div class="col-xs-8">
-          <!--change quote here-->
-          <div class="quote">"The best time to plant a tree was 20 years ago. The second best time is now." - Chinese proverb</div>
-        </div>
-        <div class="col-xs-1">
-          <!--.fa.fa-quote-right.fa-4x-->
-        </div>
-      </div>
-    </div>
-    <div class="gray"></div>
-    <!--.promo Starting a business? Advancing in your career? Trying to find balance throughout it all? We know it can be a challenge. Join us every week for fresh inspiration, relevant how-tos and the confidence boosters you need to take your life to the next level.-->
-    <div class="inspiration">
-      <div class="row">
-        <div class="col-xs-6">
-          <div class="headshot"><img src="https://s3-us-west-2.amazonaws.com/lady-rebranded/RachelDNewHeadshot_2017_2.png"></div>
-          <div class="ceo"> 
-            <h2>Rachel D. Wilson </h2>
-            <h2>CEO & Principal Consultant</h2>
-          </div>
-          <div class="branded"> 
-            <h1>GET BRANDED</h1>
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <div class="blog">
-            <div class="blog-photo"><img src="	https://s3-us-west-2.amazonaws.com/lady-rebranded/blog/laptop-lr.jpg"></div>
-            <div class="blog-text">
-              <h1>5 Overlooked Strategies for Recruiting New Business</h1><i>Affirmation: I am open to pursuing new methods to making a connection with potential clients.</i>
-              <p>Fear of the unknown often holds us back in various avenues of our lives, and it certainly plays a role in a developing brand. At times, we are so afraid of failure that we limit ourselves by trying nothing new.  But the greatest lessons are learned as we “fail forward,” try new methods and walk in courage.</p><em>1. The Incentive Referral</em>
-              <p>While many of us certainly ask our clients to refer our brands to their friends and colleagues we sometimes forget to incentivize the action. For example, by offering 15 percent off to the current client on future endeavors and 15-20% off to their referral, customers are even more eager to share your brand. By doing so, you not only show your appreciation to your client but also your value of continual relationship building beyond the first experience.</p><em>2. LinkedIn, Freelancer & More</em>
-              <p>We know that social media can already feel like a third job. But sites such as LinkedIn, Freelancer and Upwork allow brands to make a connection with potential clients that are actively seeking services. By setting up a profile and sending minor proposals we open up the door to clients who are currently (and openly) in need.</p>
+          <div class="col-xs-6">
+            <div class="contact-info"><img src="https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/contact/Los-Angeles.jpg">
+              <p>LADY Rebranded, HQ</p>
+              <p>555 W. 5th Street Floor 35</p>
+              <p>Los Angeles, CA 90013</p>
+              <p>+ 1 (213) 328-7494 </p>
             </div>
-            <div class="blog-footer"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="gray">         </div>
-    <div class="shop">
-      <div class="row">
-        <div class="col-xs-3">
-          <div class="line"></div>
-        </div>
-        <div class="col-xs-6">
-          <h1>INSPIRATIONAL RESOURCES </h1>
-        </div>
-        <div class="col-xs-3">
-          <div class="line"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-offset-1 col-xs-4">
-          <div class="inspo">Fresh inspiration every week to keep you inspired, confident and motivated!</div>
-          <div class="inspo">Get this weekly inspo delivered to straight to your inbox</div>
-        </div>
-        <div class="col-xs-offset-1 col-xs-4"><img src="https://s3-us-west-2.amazonaws.com/lady-rebranded/journal-one.jpg" class="journal-pic">
-          <div class="journal-copy">Starting a business? Advancing in your career? Want to shift your life? Find balance using tools to help you create your best life with our inspirational journal!</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-offset-1 col-xs-4">
-          <div class="subscribe">SUBSCRIBE</div>
-        </div>
-        <div class="col-xs-offset-1 col-xs-4">
-          <div class="order-now">ORDER NOW</div>
-        </div>
-      </div>
-    </div>
-    <div class="gray"></div>
   </body>
   <footer>
-    <div class="buffer"></div>
     <div class="contact-box">
-      <div class="buffer-two"></div>
-      <div class="row">
-        <div class="col-xs-2">
-          <div class="social-lockup">   
-            <div class="social"><a href="">
-                <div class="fa fa-youtube fa-2x"></div></a></div>
-            <div class="social"><a href="">
-                <div class="fa fa-soundcloud fa-2x"></div></a></div>
+      <div class="social-lockup"> 
+        <row>
+          <div class="col-xs-9"><a href="https://www.facebook.com/LADYRebranded" target="blank" class="social">
+              <div class="fa fa-circle fa-stack-2x icon-background"></div>
+              <div class="fa fa-facebook fa-stack-1x top"></div></a><a href="https://www.instagram.com/ladyrebranded" target="blank" class="social">
+              <div class="fa fa-circle fa-stack-2x icon-background"></div>
+              <div class="fa fa-instagram fa-stack-1x top"></div></a><a href="http://www.linkedin.com/company/ladyrebranded" target="blank" class="social">
+              <div class="fa fa-circle fa-stack-2x icon-background"></div>
+              <div class="fa fa-linkedin fa-stack-1x top"></div></a><a href="http://youtube.com/racheldwilson" target="blank" class="social">
+              <div class="fa fa-circle fa-stack-2x icon-background"></div>
+              <div class="fa fa-youtube fa-stack-1x top"></div></a><a href="https://soundcloud.com/msracheld" target="blank" class="social">
+              <div class="fa fa-circle fa-stack-2x icon-background"></div>
+              <div class="fa fa-soundcloud fa-stack-1x top"> </div></a>
+            <figure><img src="https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/lr-footer-copy-thin.png"></figure>
           </div>
-        </div>
-        <div class="col-xs-5">
-          <h2>LADY Rebranded, LLC. All Rights Reserved © </h2>
-        </div>
-        <div class="col-xs-2">
-          <div class="contact">Contact Us: </div>
-          <div class="contact">555 W. 5th Street FL 35 Los Angeles, CA 90013    +1 (213) 328-7494                   </div>
-        </div>
-        <div class="col-xs-2">
-          <h3 class="subscribe">Subscribe</h3>
-        </div>
+          <div class="col-xs-3"><a href="#subscribe" class="subscribe">SUBSCRIBE</a></div>
+        </row>
       </div>
-      <div class="buffer-two"></div>
     </div>
   </footer>
-  <!--script(src="bower_components/angular-animate/angular-animate.js")-->
-  <!--script(src="bower_components/angular-route/angular-route.js")-->
-  <!--script(src="bower_components/angular-cookies/angular-cookies.js")-->
-  <!--script(src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js")-->
-  <!--script(src="bower_components/moment/min/moment.min.js")-->
-  <!--script(src="bower_components/angular-validation/dist/angular-validation.js")-->
-  <!--script(src="bower_components/angular-validation/dist/angular-validation-rule.js")-->
-  <!--script(src="PlayController.js")-->
 </div>

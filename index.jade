@@ -8,203 +8,375 @@ html
 head
   meta(name="author", content="Lady Rebranded")
   meta(name="description", content="be|brand|do")
-  script(src="bower_components/jquery/dist/jquery.js")
-  script(src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js")
-  //script(rel='stylesheet' src="./bower_components/bootstrap/dist/js/bootstrap.min.js")
+  link(rel='shortcut icon' href='https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/LR-favicon.ico')
+  script(src="./jquery.js")
+  script(src='bower_components/jquery/dist/jquery.js')
+  script(src='bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js')
+  script(src="./modernizr-2.8.3.min.js")
   link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
-
   link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css", rel="stylesheet")
   link(href="./styles.min.css", rel="stylesheet")
-
   script(type="text/javascript", src="app.js")
-  title Lady Rebranded
+  script(type="text/javascript" src="//static.mailerlite.com/js/w/webforms.min.js?v3772b61f1ec61c541c401d4eadfdd02f")
+  //subscribe button pop up
+  script(type="text/javascript" src="//static.mailerlite.com/js/w/button.min.js?v1f0baea18b848a8ab8e485e9a1acc285")
+  title LADY Rebranded
 
 .container-fluid
-
    
   header
     nav
-      img.logo(src='https://s3-us-west-2.amazonaws.com/lady-rebranded/LRB_B_red_magenta-01.png')
-      img.logo(src='https://s3-us-west-2.amazonaws.com/lady-rebranded/LRB_C_red_magenta.jpg')
+      a(href='#home')
+        img.logo(src='https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/LRB_B_red_magenta-01.png')
+      a(href='#home')
+        img.logo(src='https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/textlogo.png')
       ul
-        li Events  |
-        li Inspiration  |
-        li Our Story   
-    .row
-      .col-xs-offset-1.col-xs-4
-        h1.disruptive Building Businesses with Disruptive Brands.
-        h1.tagline Be. Brand. Do.
-        sup TM
-        h1.commercial Play Video
-        h1.branded Get Branded
+        li 
+          a.home-link(href='#home') HOME |
+        li 
+          a.consulting-link(href='#consulting') CONSULTING |
+        li 
+          a.event-link(href='#events') EVENTS |
+        li
+          a.contact-link(href='#contact') CONTACT US
+      
+
 
   body
-    .gray
-  
-    .mission
-      h3 We empower women influencers, creators and entrepreneurs to build authentic, breakthrough brands. Understanding the challenges that women entrepreneurs and leaders face, we provide solutions that help women owned businesses and businesses where women lead to develop, grow and succeed.
-    .gray
+    .home-page(id='home')
+      .top-page    
+        .header-copy.showing   
+          .row
+            .col-xs-offset-1.col-xs-4
+              h1.disruptive Building Businesses with Disruptive Brands.
+              //.commercial Play Video
+              h1.learn LEARN MORE
+        //.video-lockup
+        //  a(href='https://s3-us-west-2.amazonaws.com/www.ladyrebranded.com/index.html')
+          //  .fa.fa-times.exit-video
+          //iframe(src="https://player.vimeo.com/video/145835678" width='640' height='360' webkitallowfullscreen mozallowfullscreen allowfullscreen)
+    
+      .mission 
+        h2 We empower women influencers, creators and entrepreneurs to build authentic, breakthrough brands. 
       
-    .photo-breather
-    .our-approach
-      .box
+      .photo-breather
+      
+      .our-approach
         .row
           .col-xs-offset-2.col-xs-2
             .line
           .col-xs-4
-            h1 OUR APPROACH
+            .title OUR APPROACH
           .col-xs-2
-            .line      
-        .row
-          .col-xs-offset-1.col-xs-3
-            .icon-block
-              .icon.fa.fa-gears.fa-3x
-              h2 STRATEGY
-              h4 From business to brand strategy, we partner with you to develop solutions that increase your impact and profitability.
-          .col-xs-4
-            .icon-block
-              .icon.fa.fa-map-signs.fa-3x
-              h2 CREATIVE DIRECTION
-              h4 Our award winning team seamlessly translates your vision into compelling visual content and copy that connects.  
+            .line 
+        .box     
+          .row
+            .col-xs-4
+              .icon-block
+                .icon.fa.fa-gears
+                .icon-title STRATEGY
+                .icon-copy From business to brand strategy, we partner with you to develop solutions that increase your impact and profitability.
+            .col-xs-4
+              .icon-block
+                .icon.fa.fa-map-signs
+                .icon-title CREATIVE DIRECTION
+                .icon-copy Our award winning team seamlessly translates your vision into compelling visual content and copy that connects.  
+            .col-xs-4
+              .icon-block
+                .icon.fa.fa-users
+                .icon-title TRAINING
+                .icon-copy Engaging mission-driven training solutions, we work with your team to build a strong culture around your brand. 
+          a(href='#consulting')
+            .learn LEARN MORE 
+              
+      .photo-one
+        .blue
         
+      .jumpstart
+        .row
+          .col-xs-offset-1.col-xs-10
+          .row
+            .col-xs-offset-1.col-xs-3
+              .line
+            .col-xs-4
+              h1 JumpstartHER
+            .col-xs-3
+              .line
+        .box  
+          .blurb 
+            h2 What is it?
+            h3 JumpstartHER
+            sup TM
+            h3 is where women with big ideas come to get resources to help them to increase their capacity, confidence and access to capital.  
+            h2 It is a growing global network of women who are disrupting spaces, identifying failures in the marketplace and creating socially impactful solutions in local and global economies. 
+          .row
+            .icon-row
+              .col-xs-4
+                .icon-block
+                  .icon.fa.fa-calendar-check-o
+                  .icon-title EVENTS
+                  .icon-copy From live masterclasses to webinars, join us for empowering experiences to help you build your business.
+              .col-xs-4
+                .icon-block
+                  .icon.fa.fa-laptop
+                  .icon-title RESOURCES
+                  .icon-copy Relevant, curated development resources for our growing online community of influencers, creators and entrepreneurs. 
+              .col-xs-4
+                .icon-block
+                  .icon.fa.fa-book
+                  .icon-title GUIDED CURRICULUM
+                  .icon-copy E-Books, Worksheets and Online Courses for entrepreneurs and leaders.
+          .access GET ACCESS
+          .row
+            .col-xs-12.get-access-form
+              div(id="mlb2-5250485" class="ml-subscribe-form ml-subscribe-form-5250485")
+                div(class="ml-vertical-align-center")
+                  div(class="subscribe-form ml-block-success" style="display:none")
+                    div(class="form-section")
+                      h4 GET ACCESS!
+                      p Thank you for joining the JumpstartHER community! Be sure to check your inbox to confirm your subscription.
+              
+                  form(class="ml-block-form" action="//app.mailerlite.com/webforms/submit/r5h7r9" data-id="439293" data-code="r5h7r9" method="POST" target="_blank")
+                    div(class="subscribe-form")
+                      div(class="form-section mb10")
+                        h4 GET ACCESS!
+                        p We're building an online platform for women entrepreneurs who want to scale their businesses to market! Get on the list to get access! 
+                      div(class="form-section")
+                        div(class="form-group ml-field-email ml-validate-required ml-validate-email")
+                          input(type="email" name="fields[email]" class="form-control" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off")      
+                        div(class="form-group ml-field-name ml-validate-required")
+                          input(type="text" name="fields[name]" class="form-control" placeholder="Name*" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off")
+                        div(class="form-group ml-field-last_name ml-validate-required")
+                          input(type="text" name="fields[last_name]" class="form-control" placeholder="Last name*" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                        div(class="form-group ml-field-company ml-validate-required")
+                          input(type="text" name="fields[company]" class="form-control" placeholder="Company*" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                        div(class="form-group ml-field-country ml-validate-required")
+                          input(type="text" name="fields[country]" class="form-control" placeholder="Country*" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                        div(class="form-group ml-field-city ml-validate-required")
+                          input(type="text" name="fields[city]" class="form-control" placeholder="City*" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                        input(type="hidden" name="ml-submit" value="1" )
+                        button(type="submit" class="primary gradient-on") GET ACCESS
+                        button(disabled="disabled" style="display: none;" type="button" class="loading gradient-on")
+                          img(src="//static.mailerlite.com/images/rolling.gif" width="20" height="20" style="width: 20px; height: 20px;")
+
+              
+      .photo-two
+        .buffer
+        .daily-quote   
+          .quote "We can't become what we need to be by remaining what we are."  -- Oprah Winfrey
+
+      .inspiration
+        .row        
+          .col-xs-6
+            .headshot
+              img(src='https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/home/Rachel-headshot.jpg')
+            .ceo 
+              h2 Rachel D. Wilson 
+              h2 CEO & Principal Consultant       
+          .col-xs-6
+            .blog
+              .blog-photo
+                img(src='https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/home/laptop.jpg')
+              .blog-text
+                h1 5 Overlooked Strategies for Recruiting New Business
+                em Affirmation: I am open to pursuing new methods to making a connection with potential clients.
+                p Fear of the unknown often holds us back in various avenues of our lives, and it certainly plays a role in a developing brand. At times, we are so afraid of failure that we limit ourselves by trying nothing new.  But the greatest lessons are learned as we 'fail forward,' try new methods and walk in courage.
+        .row
+          .col-xs-offset-1.col-xs-4
+            a(href='#mlb2-5239509')
+              .branded.go-to-form GET BRANDED
+          .col-xs-offset-2.col-xs-4
+            a(href='http://www.subscribepage.com/ladyrebranded' target='blank')
+              .branded GET STRATEGIES
+      .photo-three
+        
+               
+      .shop(id='subscribe')
+        .row
           .col-xs-3
-            .icon-block
-              .icon.fa.fa-users.fa-3x
-              h2 TRAINING
-              h4 Engaging mission-driven training solutions, we work with your team to build a strong culture around your brand. 
+            .line
+          .col-xs-6
+            .title INSPIRATIONAL RESOURCES 
+          .col-xs-3
+            .line
         .row
-          .col-xs-offset-4.col-xs-4
-            h1.learn Learn More 
-            
-    .photo-one
-      .blue
-      
-    .jumpstart
-      .row
-        .col-xs-offset-1.col-xs-10
-          .box
-            .row
-              .col-xs-3
-                .line
-              .col-xs-6
-                h1 JUMPSTART
-                h1.her HER
-              .col-xs-3
-                .line
-            .blurb 
-              h2 A globally accessible, comprehensive network that provides women entrepreneurs with resources and a community to grow their businesses. 
-            .row
-              .icon-row
-                .col-xs-4
-                  .icon-block
-                    .icon.fa.fa-calendar-check-o.fa-3x
-                    h3.events EVENTS
-                    h4 From live masterclasses to webinars, join us for empowering experiences to help you build your business.
-                .col-xs-4
-                  .icon-block
-                    .icon.fa.fa-laptop.fa-3x
-                    h3.resources RESOURCES
-                    h4 Relevant curated development resources for our growing online community of influencers, creators and entrepreneurs. 
-                .col-xs-4
-                  .icon-block
-                    .icon.fa.fa-book.fa-3x
-                    h3.curriculum GUIDED CURRICULUM
-                    h4 E-Books, Worksheets and Online Courses for entrepreneurs and leaders.
-            .access GET ACCESS
-    .photo-two
-    .gray  
-    .daily-quote  
-      .row
-        .col-xs-offset-1.col-xs-1
-          //.fa.fa-quote-left.fa-4x
-        .col-xs-8
-            //change quote here
-            .quote "The best time to plant a tree was 20 years ago. The second best time is now." - Chinese proverb
-        .col-xs-1
-          //.fa.fa-quote-right.fa-4x
-    .gray
-    //.promo Starting a business? Advancing in your career? Trying to find balance throughout it all? We know it can be a challenge. Join us every week for fresh inspiration, relevant how-tos and the confidence boosters you need to take your life to the next level.
+          .col-xs-offset-1.col-xs-4
+            .inspo.first Fresh inspiration every week to keep you inspired, confident and motivated!  
+            .inspo.second Get this weekly inspo delivered straight to your inbox.    
+            .subscribe SUBSCRIBE
+            div(id="mlb2-5249483" class="ml-subscribe-form ml-subscribe-form-5249483")
+              .ml-vertical-align-center
+                div(class="subscribe-form ml-block-success" style="display:none")
+                  div(class="form-section")
+                    h4 GET ON THE LIST
+                    p Thank you for subscribing! Be sure to check your inbox to confirm your subscription.
 
-    .inspiration
-      .row
+                form(class="ml-block-form" action="//app.mailerlite.com/webforms/submit/d0q8e0" data-id="439105" data-code="d0q8e0" method="POST" target="_blank")
+                  div(class="subscribe-form")
+                    div(class="form-section mb10")
+                      h4 GET ON THE LIST
+                      p Exclusive access to tips, resources & events delivered straight to your inbox! 
+
+                    div(class="form-section")
+                      div(class="form-group ml-field-email ml-validate-required ml-validate-email")
+                        input(type="email" name="fields[email]" class="form-control" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off")
+
+                    input(type="hidden" name="ml-submit" value="1")
+                    button(type="submit" class="primary gradient-on") SUBSCRIBE
+                    button(disabled="disabled" style="display: none;" type="button" class="loading gradient-on")
+                      img(src="//static.mailerlite.com/images/rolling.gif" width="20" height="20" style="width: 20px; height: 20px;")
+
+          .col-xs-offset-2.col-xs-4
+            div(id='product-component-154000897be')
+        .buffer
             
-        .col-xs-6
-          .headshot
-            img(src='https://s3-us-west-2.amazonaws.com/lady-rebranded/RachelDNewHeadshot_2017_2.png')
-          .ceo 
-            h2 Rachel D. Wilson 
-            h2 CEO & Principal Consultant
-          .branded 
-            h1 GET BRANDED
-            
-        .col-xs-6
-          .blog
-            .blog-photo
-              img(src='	https://s3-us-west-2.amazonaws.com/lady-rebranded/blog/laptop-lr.jpg')
-            .blog-text
-              h1 5 Overlooked Strategies for Recruiting New Business
-              i Affirmation: I am open to pursuing new methods to making a connection with potential clients.
-              p Fear of the unknown often holds us back in various avenues of our lives, and it certainly plays a role in a developing brand. At times, we are so afraid of failure that we limit ourselves by trying nothing new.  But the greatest lessons are learned as we “fail forward,” try new methods and walk in courage.
-              em 1. The Incentive Referral
-              p While many of us certainly ask our clients to refer our brands to their friends and colleagues we sometimes forget to incentivize the action. For example, by offering 15 percent off to the current client on future endeavors and 15-20% off to their referral, customers are even more eager to share your brand. By doing so, you not only show your appreciation to your client but also your value of continual relationship building beyond the first experience.
-              em 2. LinkedIn, Freelancer & More
-              p We know that social media can already feel like a third job. But sites such as LinkedIn, Freelancer and Upwork allow brands to make a connection with potential clients that are actively seeking services. By setting up a profile and sending minor proposals we open up the door to clients who are currently (and openly) in need.
-            .blog-footer
+    .event-page(id='events') 
+      .events
+        //hey Rachel!
+        //you're writing code!!
+        //go get em!!
+        //this is the spot!!
+        //right here!!
+        //have a great event!!
+        //update event link here
+        iframe(src="https://www.eventbrite.com/e/lady-rebranded-mastermind-coaching-event-tickets-35162969388?ref=eweb" frameborder="0" height="1000" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true")
+      
+    .consulting-page
     
-    .gray          
-    .shop
-      .row
-        .col-xs-3
-          .line
-        .col-xs-6
-          h1 INSPIRATIONAL RESOURCES 
-        .col-xs-3
-          .line
-      .row
-        .col-xs-offset-1.col-xs-4
-          .inspo Fresh inspiration every week to keep you inspired, confident and motivated!
-          .inspo Get this weekly inspo delivered to straight to your inbox
-          
-        .col-xs-offset-1.col-xs-4
-          img.journal-pic(src='https://s3-us-west-2.amazonaws.com/lady-rebranded/journal-one.jpg')
-          .journal-copy Starting a business? Advancing in your career? Want to shift your life? Find balance using tools to help you create your best life with our inspirational journal!
-          
-      .row
-        .col-xs-offset-1.col-xs-4
-          .subscribe SUBSCRIBE
-        .col-xs-offset-1.col-xs-4
-          .order-now ORDER NOW
-    .gray
-      
-  footer
-    .buffer
-    .contact-box
-      .buffer-two
-      .row
-        .col-xs-2
-          .social-lockup    
-            .social
-              a(href='')
-                .fa.fa-youtube.fa-2x
-            .social
-              a(href='')
-                .fa.fa-soundcloud.fa-2x
-      
-        .col-xs-5
-          h2 LADY Rebranded, LLC. All Rights Reserved © 
-        .col-xs-2
-          .contact Contact Us: 
-          .contact 555 W. 5th Street FL 35 Los Angeles, CA 90013    +1 (213) 328-7494                   
+      .consulting(id='consulting')
 
-        .col-xs-2
-          h3.subscribe Subscribe
+        .consulting-copy Our unique approach helps your business to develop, grow and succeed.
+  
+      .building
+        .title Building Brands Means...
+        .row
+          .col-xs-4
+            .picture-block.strategy(id='strategy')
+              a(href='#strategy')
+                .text-block
+                  .picture-title STRATEGY
+
+          .col-xs-4
+            .picture-block.creative(id='creative')
+              a(href='#creative')
+                .text-block
+                  .picture-title CREATIVE DIRECTION
+  
+          .col-xs-4
+            .picture-block.training(id='training')
+              a(href='#training')
+                .text-block
+                  .picture-title TRAINING
+                
+        .copy-box
+          .fa.fa-times
+          .picture-heading.strategy-copy STRATEGY
+          .picture-copy.strategy-copy The key to building a strong brand is creating a solid strategy. We work with you to help you identify your niche, understand your user and tell your brand story in a way that is relevant and influential. From business development to brand cultivation, our approach to creating solutions that position your business to succeed are engaging and empowering. 
+          .picture-heading.creative-copy CREATIVE DIRECTION
+          .picture-copy.creative-copy We believe that innovation and creativity are essential components to creating unforgettable brand experiences. Our team brings over 10 years of experience in creative consulting. We are passionate about multimedia production and have the expertise to help you effectively communicate your brand story. Through the use of powerful tools such as storytelling, we partner with you to create compelling content that is authentic and connects.
+          .picture-heading.training-copy TRAINING
+          .picture-copy.training-copy From employing effective ways to engage your team or translating your strategic objectives into a business culture that is consistent with your brand; we provide training solutions that are transformational. Taking a mission-driven approach, our training outcomes are geared towards strengthening your brand culture, cultivating leadership, creating community and increasing your profitability. 
+
+          
+      .get-branded 
+        .get-branded-copy Contact us to learn more about our offerings and opportunities to increase your brand's impact.
+        a(href='#mlb2-5239509')
+          .get-branded-button GET BRANDED
         
-      .buffer-two
-  //script(src="bower_components/angular-animate/angular-animate.js")
-  //script(src="bower_components/angular-route/angular-route.js")
-  //script(src="bower_components/angular-cookies/angular-cookies.js")
-  //script(src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js")
-  //script(src="bower_components/moment/min/moment.min.js")
-  //script(src="bower_components/angular-validation/dist/angular-validation.js")
-  //script(src="bower_components/angular-validation/dist/angular-validation-rule.js")
-  //script(src="PlayController.js")
+      .testimonials-photo
+        
+      .testimonials
+        .row
+          .col-xs-offset-2.col-xs-2
+            .line
+          .col-xs-4
+            .title TESTIMONIALS
+          .col-xs-2
+            .line
+        div(class='testimonial-quote quote-one')  LADY Rebranded is for everybody. Whether you know something or you know nothing, LADY Rebranded can help you tell your story.
+          .quote-by Kristen Wickstrom- Community Manager, WeWork
+        div(class='testimonial-quote quote-two') LADY Rebranded is helping to capture & tell the stories of many women in business. 
+          .quote-by Vincent Scatliffe- CEO, Continuous Good
+        div(class='testimonial-quote quote-three') It is invaluable to have businesses like LADY Rebranded to not only give you the tools you need to succeed in the business world, but in your personal life as well.
+          .quote-by Stephanie M. Mosley- TV/Film Writer & Producer
+        div(class='testimonial-quote quote-four') Learning about business planning through LADY Rebranded's method, I now use my gifts as a comedienne & actor to create a business.
+          .quote-by Eljae Brown- Comedienne & Actor, SAG
+  
+    .contact-page(id='contact')
+      .get-branded
+        .buffer
+        a(href="#mlb2-5239509")
+          h1.branded GET BRANDED
+        h2 Contact us today for a free consultation.
+      .contact-section
+        .row
+          .col-xs-6
+            .contact-form
+              div(id="mlb2-5239509" class="ml-subscribe-form ml-subscribe-form-5239509")
+                div(class="ml-vertical-align-center")
+                  div(class="subscribe-form ml-block-success" style="display:none")
+                    div(class="form-section")
+                      h4 CONTACT US!
+                      p Thank you for reaching out! Our team will connect with you within 24 hours.
+                  
+                  form(class="ml-block-form" action="//app.mailerlite.com/webforms/submit/y1d6z7" data-id="437933" data-code="y1d6z7" method="POST" target="_blank")
+                    div(class="subscribe-form")
+                      div(class="form-section mb10")
+                        h4 CONTACT US!
+                        p Let us help you increase your impact and profitability as you build your business! 
+                        
+                        div(class="form-section")
+                          div(class="form-group ml-field-email ml-validate-required ml-validate-email")
+                            input(type="email" name="fields[email]" class="form-control" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off")
+                          div(class="form-group ml-field-name ml-validate-required")
+                            input(type="text" name="fields[name]" class="form-control" placeholder="First Name*" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off")
+                          div(class="form-group ml-field-last_name ml-validate-required")
+                              input(type="text" name="fields[last_name]" class="form-control" placeholder="Last Name*" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                          div(class="form-group ml-field-company")
+                              input(type="text" name="fields[company]" class="form-control" placeholder="Company" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                          div(class="form-group ml-field-city")
+                              input(type="text" name="fields[city]" class="form-control" placeholder="City" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                          div(class="form-group ml-field-phone ml-validate-required")
+                              input(type="text" name="fields[phone]" class="form-control" placeholder="Phone*" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                          div(class="form-group ml-field-state")
+                              input(type="text" name="fields[state]" class="form-control" placeholder="What service are you inquiring about?" value="" spellcheck="false" autocapitalize="off" autocorrect="off")
+                        input(type="hidden" name="ml-submit" value="1")
+                        button(type="submit" class="primary gradient-on") CONTACT ME
+                        button(disabled="disabled" style="display: none;" type="button" class="loading gradient-on")
+                          img(src="//static.mailerlite.com/images/rolling.gif" width="20" height="20" style="width: 20px; height: 20px;")
+                          
+                        script function ml_webform_success_5239509(){var $ = ml_jQuery || jQuery; $('.ml-subscribe-form-5239509 .ml-block-success').show(); $('.ml-subscribe-form-5239509 .ml-block-form').hide();};
+        
+          .col-xs-6
+            .contact-info
+              img(src='https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/contact/Los-Angeles.jpg')
+              p LADY Rebranded, HQ
+              p 555 W. 5th Street Floor 35
+              p Los Angeles, CA 90013
+              p + 1 (213) 328-7494 
+    
+  footer
+    .contact-box
+      .social-lockup 
+        row
+          .col-xs-9
+            a(href='https://www.facebook.com/LADYRebranded' target='blank' class='social')
+              .fa.fa-circle.fa-stack-2x.icon-background
+              .fa.fa-facebook.fa-stack-1x.top
+            a(href='https://www.instagram.com/ladyrebranded' target='blank' class='social')
+              .fa.fa-circle.fa-stack-2x.icon-background
+              .fa.fa-instagram.fa-stack-1x.top
+            a(href='http://www.linkedin.com/company/ladyrebranded' target='blank' class='social')
+              .fa.fa-circle.fa-stack-2x.icon-background
+              .fa.fa-linkedin.fa-stack-1x.top
+            a(href='http://youtube.com/racheldwilson' target='blank' class='social')
+              .fa.fa-circle.fa-stack-2x.icon-background
+              .fa.fa-youtube.fa-stack-1x.top
+            a(href='https://soundcloud.com/msracheld' target='blank' class='social')
+              .fa.fa-circle.fa-stack-2x.icon-background
+              .fa.fa-soundcloud.fa-stack-1x.top  
+            figure
+              img(src='https://s3-us-west-1.amazonaws.com/ladyrebranded.com/images/lr-footer-copy-thin.png')      
+          .col-xs-3
+            a(href='#subscribe' class='subscribe') SUBSCRIBE
+    
